@@ -1,4 +1,4 @@
-package org.pesho.task;
+package org.pesho.task.tests;
 
 import java.util.List;
 
@@ -6,6 +6,7 @@ public class TestGroup {
 
 	private double weight;
 	private List<TestCase> testCases;
+	private boolean hasFeedback;
 
 	public TestGroup() {
 	}

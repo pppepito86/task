@@ -5,14 +5,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import org.pesho.task.TestCase;
-import org.pesho.task.TestGroup;
 import org.pesho.task.properties.GroupsProperties;
 
 public class TaskGroupsFinder {
 	
 	public static List<TestGroup> findGroupsInTaskDir(Path taskDir, Optional<GroupsProperties> groupProperties) throws Exception {
-		List<TestCase> allTests = TaskTestsFinder.findTestsInTaskDir(taskDir);
+		List<TestCase> allTests = new TaskTestsFinder().findTests(taskDir);
 		int groupsCount = groupProperties.map(p -> p.groupsCount()).orElse(allTests.size());
 		
 		List<TestGroup> groups = new ArrayList<>();

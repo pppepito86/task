@@ -1,4 +1,4 @@
-package org.pesho.task.constraints;
+package org.pesho.task.tests;
 
 import org.pesho.task.properties.TaskProperties;
 
@@ -8,6 +8,7 @@ public class TaskConstraints {
 	
 	private double time;
 	private int memory;
+	private int rejudgeTimes;
 	
 	public TaskConstraints(double time, int memory) {
 		this.time = time;

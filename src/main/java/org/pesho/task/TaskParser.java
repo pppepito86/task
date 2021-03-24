@@ -304,20 +304,20 @@ public class TaskParser {
 			return Math.min(Math.min(a, b), c);
 		}
 
-		public static int computeLevenshteinDistance(String lhs, String rhs) {
-			int[][] distance = new int[lhs.length() + 1][rhs.length() + 1];
+		public static int computeLevenshteinDistance(String a, String b) {
+			int[][] distance = new int[a.length() + 1][b.length() + 1];
 
-			IntStream.range(0, lhs.length() + 1).forEach(i -> distance[i][0] = i);
-			IntStream.range(0, rhs.length() + 1).forEach(j -> distance[0][j] = j);
+			IntStream.range(0, a.length() + 1).forEach(i -> distance[i][0] = i);
+			IntStream.range(0, b.length() + 1).forEach(j -> distance[0][j] = j);
 
-			for (int i = 1; i <= lhs.length(); i++) {
-				for (int j = 1; j <= rhs.length(); j++) {
+			for (int i = 1; i <= a.length(); i++) {
+				for (int j = 1; j <= b.length(); j++) {
 					distance[i][j] = min(distance[i - 1][j] + 1, distance[i][j - 1] + 1,
-							distance[i - 1][j - 1] + ((lhs.charAt(i - 1) == rhs.charAt(j - 1)) ? 0 : 1));
+							distance[i - 1][j - 1] + ((a.charAt(i - 1) == b.charAt(j - 1)) ? 0 : 1));
 				}
 			}
 
-			return distance[lhs.length()][rhs.length()];
+			return distance[a.length()][b.length()];
 		}
 	}
 

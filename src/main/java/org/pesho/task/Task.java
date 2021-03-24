@@ -5,11 +5,12 @@ import java.util.List;
 import java.util.Optional;
 
 import org.pesho.task.checker.TaskChecker;
-import org.pesho.task.constraints.TaskConstraints;
 import org.pesho.task.description.TaskDescription;
 import org.pesho.task.grader.TaskGrader;
 import org.pesho.task.scoring.Scoring;
 import org.pesho.task.solutions.TaskSolutions;
+import org.pesho.task.tests.TaskConstraints;
+import org.pesho.task.tests.TestGroup;
 
 public class Task {
 	

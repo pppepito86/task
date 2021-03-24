@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class TaskProperties {
 
 	public enum PROPS {
-		TIME, MEMORY, GROUPS, WEIGHTS, FEEDBACK
+		TIME, MEMORY, GROUPS, WEIGHTS, FEEDBACK, POINTS
 	}
 	
 	private TimeProperties time;

@@ -1,0 +1,11 @@
+tests/inputs1t1 tests/outputs1t1
+tests/inputs1t2 tests/outputs1t2
+tests/inputs1t3 tests/outputs1t3
+tests/inputs2t1 tests/outputs2t1
+tests/inputs2t2 tests/outputs2t2
+tests/inputs2t3 tests/outputs2t3
+tests/inputs2t4 tests/outputs2t4
+tests/inputs2t5 tests/outputs2t5
+tests/inputs3t1 tests/outputs3t1
+tests/inputs3t2 tests/outputs3t2
+tests/inputs3t3 tests/outputs3t3

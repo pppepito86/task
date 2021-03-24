@@ -4,10 +4,10 @@ import java.nio.file.Path;
 
 import org.pesho.task.Task.TaskBuilder;
 import org.pesho.task.checker.TaskCheckerFinder;
-import org.pesho.task.constraints.TaskConstraints;
 import org.pesho.task.grader.TaskGraderFinder;
 import org.pesho.task.properties.TaskProperties;
 import org.pesho.task.properties.TaskPropertiesFinder;
+import org.pesho.task.tests.TaskConstraints;
 import org.pesho.task.tests.TaskGroupsFinder;
 
 public class TaskCreator {

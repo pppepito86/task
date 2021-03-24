@@ -1,0 +1,15 @@
+tests/input1 tests/output1
+tests/input2 tests/output2
+tests/input3 tests/output3
+tests/input4 tests/output4
+tests/input5 tests/output5
+tests/input6 tests/output6
+tests/input7 tests/output7
+tests/input8 tests/output8
+tests/input9 tests/output9
+tests/input10 tests/output10
+tests/input11 tests/output11
+tests/input12 tests/output12
+tests/input13 tests/output13
+tests/input14 tests/output14
+tests/input15 tests/output15

@@ -1,4 +1,4 @@
-package org.pesho.task;
+package org.pesho.task.tests;
 
 import java.nio.file.Path;
 
@@ -10,6 +10,10 @@ public class TestCase {
 	private boolean hasFeedback;
 	
 	public TestCase() {
+	}
+	
+	public TestCase(int number, String input, String output) {
+		this(number, Path.of(input), Path.of(output));
 	}
 	
 	public TestCase(int number, Path input, Path output) {
